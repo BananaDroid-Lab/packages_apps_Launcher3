@@ -454,4 +454,7 @@
     <!-- Default Ime height. Used only for logging purposes.
     Assume this is default keyboard height in EN locale in case the keyboard height is not known when queried.-->
     <dimen name="default_ime_height">300dp</dimen>
+
+    <!-- QuickSpace -->
+    <dimen name="quickspace_title_size">22sp</dimen>
 </resources>
