@@ -108,6 +108,10 @@ public class SettingsHomescreen extends CollapsingToolbarBaseActivity
             case Utilities.KEY_SHORT_PARALLAX:
             case Utilities.KEY_SINGLE_PAGE_CENTER:
             case Utilities.KEY_DOCK_MUSIC_SEARCH:
+            case Utilities.KEY_QUICK_EVENTS_MSGS:
+            case Utilities.KEY_EXTENDED_QUICKSPACE:
+            case Utilities.DESKTOP_SHOW_QUICKSPACE:
+            case Utilities.DESKTOP_SHOW_CENTER_QUICKSPACE:
                 LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                 break;
             default:
