@@ -338,6 +338,7 @@ public class ActivityAllAppsContainerView<T extends Context & ActivityContext>
             // If exiting search, revert predictive back scale on all apps
             mAllAppsTransitionController.animateAllAppsToNoScale();
         }
+        setScrollbarVisibility(!goingToSearch);
         mSearchTransitionController.animateToSearchState(goingToSearch, durationMs,
                 /* onEndRunnable = */ () -> {
                     mIsSearching = goingToSearch;
@@ -1008,6 +1009,13 @@ public class ActivityAllAppsContainerView<T extends Context & ActivityContext>
         if (mNavBarScrimHeight > 0) {
             canvas.drawRect(0, getHeight() - mNavBarScrimHeight, getWidth(), getHeight(),
                     mNavBarScrimPaint);
+        }
+    }
+
+    protected void setScrollbarVisibility(boolean visible) {
+        final RecyclerViewFastScroller scrollbar = getScrollBar();
+        if (scrollbar != null) {
+            scrollbar.setVisibility(visible ? VISIBLE : GONE);
         }
     }
 
