@@ -195,6 +195,7 @@ public final class Utilities {
     public static final String KEY_SINGLE_PAGE_CENTER = "pref_single_page_center";
     public static final String KEY_DRAWER_SEARCH = "pref_drawer_search";
     public static final String DESKTOP_SHOW_QUICKSPACE = "pref_show_quickspace";
+    public static final String DESKTOP_SHOW_CENTER_QUICKSPACE = "pref_show_center_quickspace";
 
     /**
      * Returns true if theme is dark.
@@ -1030,6 +1031,11 @@ public final class Utilities {
     public static boolean showQuickspace(Context context) {
         SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
         return prefs.getBoolean(DESKTOP_SHOW_QUICKSPACE, true);
+    }
+
+    public static boolean useCenterQuickspaceUI(Context context) {
+        SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(DESKTOP_SHOW_CENTER_QUICKSPACE, false);
     }
 
     public static boolean showQuickEventsMsgs(Context context) {
