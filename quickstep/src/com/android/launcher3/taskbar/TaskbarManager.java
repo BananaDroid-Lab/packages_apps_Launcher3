@@ -402,7 +402,7 @@ public class TaskbarManager implements OnSharedPreferenceChangeListener {
         SystemUiProxy sysui = SystemUiProxy.INSTANCE.get(mContext);
         sysui.setTaskbarEnabled(isTaskbarEnabled);
         if (!isTaskbarEnabled) {
-            SystemUiProxy.INSTANCE.get(mContext)
+            SystemUiProxy.INSTANCE.get(mContext);
             sysui.notifyTaskbarStatus(/* visible */ false, /* stashed */ false);
             return;
         }
