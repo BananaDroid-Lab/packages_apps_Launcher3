@@ -326,4 +326,8 @@
     <string name="quickspace_grt_midnight">Solemn midnight</string>
     <string name="quickspace_grt_general">Good day</string>
     <string name="extended_clock_text">It\'s</string>
+
+    <!-- Freed memory on clear all tasks -->
+    <string name="freed_memory_text">Freed up %1$s</string>
+    <string name="optimal_memory_text">Your system is now in optimal condition</string>
 </resources>
