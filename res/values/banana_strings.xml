@@ -408,4 +408,8 @@
     <!-- Task lock -->
     <string name="task_menu_item_unlock">Unlock</string>
     <string name="task_menu_item_lock">Lock</string>
+
+    <!-- Weather -->
+    <string name="weather_settings_title">Weather settings</string>
+    <string name="weather_settings_summary">Setup icon pack and weather service</string>
 </resources>
